@@ -16,6 +16,6 @@ export default function FacebookCounter(a:HTMLAnchorElement) {
   }
   const oReq = new XMLHttpRequest();
   oReq.addEventListener('load', updateDOM);
-  oReq.open('GET', `https://graph.facebook.com/?id=${encodeURIComponent(link)}`);
+  oReq.open('GET', `https://graph.facebook.com/?id=${link}`);
   oReq.send();
 }
